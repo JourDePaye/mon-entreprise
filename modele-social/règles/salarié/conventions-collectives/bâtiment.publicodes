@@ -98,9 +98,19 @@ salarié . convention collective . BTP . catégorie . cadre:
       valeur: oui
 
 salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire:
+  description: >-
+    Régime national de prévoyance des cadres du BTP (RNPC). La cotisation de
+    1,50 % sur la tranche A, à la charge de l'employeur, vaut cotisation
+    obligatoire de prévoyance des cadres : elle remplace celle du droit commun.
+    La cotisation de 2,40 % sur la tranche B est répartie par l'entreprise (à
+    parts égales ici). La tranche C est une garantie optionnelle, non prise en
+    compte.
+  rend non applicable: cotisations . prévoyances . employeur . cadres
   somme:
     - employeur
     - salarié
+  références:
+    PRO BTP, chiffres, taux et assiettes 2026: https://www.probtp.com/files/live/sites/probtp/files/media/pdf/PRO/declarations/notice-entreprise-assiette-taux.pdf
 
   avec:
     employeur:
@@ -112,8 +122,6 @@ salarié . convention collective . BTP . catégorie . cadre . prévoyance compl�
             plafond: 1
           - taux: 50% * 2.40%
             plafond: 4
-          - taux: 50% * 3.60%
-            plafond: 8
       remplace: cotisations . prévoyances . conventionnelle . employeur
 
     salarié:
@@ -125,8 +133,6 @@ salarié . convention collective . BTP . catégorie . cadre . prévoyance compl�
             plafond: 1
           - taux: 50% * 2.40%
             plafond: 4
-          - taux: 50% * 3.60%
-            plafond: 8
       remplace: cotisations . prévoyances . conventionnelle . salarié
 
 salarié . convention collective . BTP . cotisations employeur:

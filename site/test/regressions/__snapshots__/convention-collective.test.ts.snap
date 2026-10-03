@@ -36,12 +36,23 @@ Notifications affichées : salarié . convention collective . avertissement conv
 exports[`calculate simulations-salarié > CCN batiment 3`] = `
 "salarié . contrat . salaire brut: 2500
 salarié . contrat . salaire brut . équivalent temps plein: null
-salarié . coût total employeur: 3737
+salarié . coût total employeur: 3699
 salarié . rémunération . contrôle minimum: null
-salarié . rémunération . net . payé après impôt: 1875
-salarié . rémunération . net . à payer avant impôt: 1949
+salarié . rémunération . net . payé après impôt: 1880
+salarié . rémunération . net . à payer avant impôt: 1953
 
 Notifications affichées : salarié . convention collective . avertissement convention collective"
+`;
+
+exports[`calculate simulations-salarié > CCN batiment 4`] = `
+"salarié . contrat . salaire brut: 20000
+salarié . contrat . salaire brut . équivalent temps plein: null
+salarié . coût total employeur: 32653
+salarié . rémunération . contrôle minimum: null
+salarié . rémunération . net . payé après impôt: 10830
+salarié . rémunération . net . à payer avant impôt: 15798
+
+Notifications affichées : salarié . convention collective . avertissement convention collective, salarié . contrat . salaire brut . contrôle salaire élevé"
 `;
 
 exports[`calculate simulations-salarié > CCN compta 1`] = `

@@ -14,6 +14,7 @@
 - Taux minimum pour la cotisation ATMP applicable depuis le 1er janvier 2026
 
 ### Corrections
+- La prévoyance des cadres du bâtiment (`salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire`) ne s'ajoute plus à la prévoyance obligatoire des cadres, qu'elle inclut, et n'applique plus la tranche C, optionnelle
 - Corrige les taux de cotisation réduits pour la maladie-maternité-invalidité-décès et les allocations familiales à Mayotte
 - Supprime les cotisations retraite complémentaires obligatoires pour Mayotte
 - Supprime le forfait social à Mayotte
