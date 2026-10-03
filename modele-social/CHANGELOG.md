@@ -7,6 +7,7 @@
 
 ### Nouveautés
 - Calcul de la Lodeom à Mayotte
+- Cotisation chômage intempéries du bâtiment (`salarié . convention collective . BTP . chômage intempéries`), selon l'activité de l'entreprise (`... . secteur`)
 - Plafond de sécurité sociale mahorais
 - Cotisations patronales et salariales pour Mayotte
 

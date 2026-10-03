@@ -8,6 +8,12 @@ CCN batiment:
   - salarié . contrat . salaire brut: 2500 €/mois
     salarié . convention collective: "'BTP'"
     salarié . convention collective . BTP . catégorie: "'cadre'"
+  - salarié . contrat . salaire brut: 2500 €/mois
+    salarié . convention collective: "'BTP'"
+    salarié . convention collective . BTP . chômage intempéries . secteur: "'gros œuvre'"
+  - salarié . contrat . salaire brut: 2500 €/mois
+    salarié . convention collective: "'BTP'"
+    salarié . convention collective . BTP . chômage intempéries . secteur: "'non exposée'"
 
 CCN compta:
   - salarié . contrat . salaire brut: 2500 €/mois

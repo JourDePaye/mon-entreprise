@@ -134,6 +134,7 @@ salarié . convention collective . BTP . cotisations employeur:
   somme:
     - cotisations . employeur
     - congés intempéries
+    - chômage intempéries
     - OPPBTP
 
 salarié . convention collective . BTP . congés intempéries:
@@ -190,6 +191,51 @@ salarié . convention collective . BTP . congés intempéries . caisse de rattac
     nord ouest:
     rhône alpes auvergne:
     sud ouest:
+
+salarié . convention collective . BTP . chômage intempéries:
+  titre: cotisation chômage intempéries
+  description: >-
+    Cotisation patronale versée à la caisse CIBTP, qui indemnise les salariés
+    lorsque les intempéries arrêtent les chantiers. Elle est assise sur les
+    salaires plafonnés à la sécurité sociale, à un taux qui dépend de l'activité
+    de l'entreprise.
+  note: >-
+    La cotisation n'est appelée qu'au-delà d'un abattement annuel par
+    entreprise (96 168 € pour la campagne 2026-2027, soit 8 000 fois le SMIC
+    horaire), qui ne peut pas être pris en compte salarié par salarié.
+  produit:
+    - valeur: cotisations . assiette
+      plafond: temps de travail . plafond sécurité sociale
+    - taux
+  références:
+    CIBTP Rhône-Alpes Auvergne, cotisations chômage intempéries: https://www.cibtp-raa.fr/entreprise/declarations-cotisations/cotisations-chomage-intemperies
+    CIBTP Île-de-France, taux des cotisations avril 2026: https://www.cibtp-idf.fr/media/ile-de-france/adhesion-cotisation/Page_des_taux_avril_2026.pdf
+    CIBTP Grand Est, taux au 1er janvier 2026: https://www.cibtp-grandest.fr/media/grand-est/adhesion-cotisation/Synthese_des_taux_1er_janvier_2026.pdf
+
+salarié . convention collective . BTP . chômage intempéries . taux:
+  unité: '%'
+  variations:
+    - si: secteur = 'gros œuvre'
+      alors: 0.68%
+    - si: secteur = 'second œuvre'
+      alors: 0.13%
+    - sinon: 0%
+
+salarié . convention collective . BTP . chômage intempéries . secteur:
+  question: Quelle est l'activité de l'entreprise pour la cotisation chômage intempéries ?
+  une possibilité:
+    - gros œuvre
+    - second œuvre
+    - non exposée
+  par défaut: "'second œuvre'"
+
+  avec:
+    gros œuvre:
+      titre: Gros œuvre ou travaux publics
+    second œuvre:
+      titre: Second œuvre
+    non exposée:
+      titre: Activité non exposée aux intempéries
 
 salarié . convention collective . BTP . OPPBTP:
   formule:

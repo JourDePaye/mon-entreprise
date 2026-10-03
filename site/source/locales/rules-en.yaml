@@ -10679,6 +10679,45 @@ salarié . convention collective . BTP . catégorie . ouvrier . prévoyance comp
       titre.fr: salarié
   titre.en: '[automatic] supplementary pension'
   titre.fr: prévoyance complémentaire
+salarié . convention collective . BTP . chômage intempéries:
+  description.en: >-
+    Employer contribution paid to the CIBTP fund, which compensates employees
+    when bad weather stops construction sites. It is based on salaries capped at
+    the social security ceiling, at a rate that depends on the company's activity.
+  description.fr: >-
+    Cotisation patronale versée à la caisse CIBTP, qui indemnise les salariés
+    lorsque les intempéries arrêtent les chantiers. Elle est assise sur les
+    salaires plafonnés à la sécurité sociale, à un taux qui dépend de l'activité
+    de l'entreprise.
+  note.en: >-
+    The contribution is only due above an annual allowance per company
+    (€96,168 for the 2026-2027 campaign, i.e. 8,000 times the hourly minimum
+    wage), which cannot be taken into account employee by employee.
+  note.fr: >-
+    La cotisation n'est appelée qu'au-delà d'un abattement annuel par
+    entreprise (96 168 € pour la campagne 2026-2027, soit 8 000 fois le SMIC
+    horaire), qui ne peut pas être pris en compte salarié par salarié.
+  titre.en: bad weather unemployment contribution
+  titre.fr: cotisation chômage intempéries
+salarié . convention collective . BTP . chômage intempéries . secteur:
+  avec:
+    gros œuvre:
+      titre.en: Structural work or public works
+      titre.fr: Gros œuvre ou travaux publics
+    non exposée:
+      titre.en: Activity not exposed to bad weather
+      titre.fr: Activité non exposée aux intempéries
+    second œuvre:
+      titre.en: Finishing work
+      titre.fr: Second œuvre
+  question.en: What is the company's activity for the bad weather unemployment
+    contribution?
+  question.fr: Quelle est l'activité de l'entreprise pour la cotisation chômage intempéries ?
+  titre.en: sector
+  titre.fr: secteur
+salarié . convention collective . BTP . chômage intempéries . taux:
+  titre.en: rate
+  titre.fr: taux
 salarié . convention collective . BTP . congés intempéries:
   titre.en: '[automatic] bad weather leave'
   titre.fr: congés intempéries

@@ -114,6 +114,7 @@ export const configSalarié: PublicodesSimulationConfig = {
 			'salarié . convention collective',
 			'salarié . convention collective . BTP . catégorie',
 			'salarié . convention collective . BTP . congés intempéries . caisse de rattachement',
+			'salarié . convention collective . BTP . chômage intempéries . secteur',
 			'salarié . convention collective . sport . joueur entraineur',
 			'salarié . convention collective . sport . primes . nombre de manifestations',
 			'salarié . convention collective . sport . primes . manifestation 1',
