@@ -119,8 +119,8 @@ salarié . rémunération . net . imposable:
       somme:
         - net
         - cotisations . CSG-CRDS . non déductible
-        - cotisations . prévoyances . employeur
-        - cotisations . prévoyances . salarié . non déductible
+        - cotisations . prévoyances . santé . employeur
+        - cotisations . prévoyances . non déductible fiscalement
 
 salarié . rémunération . net . payé après impôt:
   titre: Salaire net après impôt

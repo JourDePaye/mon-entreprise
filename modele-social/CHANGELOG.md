@@ -20,6 +20,7 @@
 - Corrige le taux de la cotisation vieillesse à Mayotte
 - Utilisation du Smic au 1er janvier 2026 dans les calculs de la RGDU et de la Lodeom
 - Corrige l'unité de `protection sociale . invalidité et décès . capital décès . orphelin`
+- Net imposable : la part patronale de la prévoyance incapacité, invalidité, décès n'est plus ajoutée au premier euro ; seules les cotisations (salariales et patronales hors frais de santé) au-delà de la limite de 5 % du plafond de la sécurité sociale et 2 % de la rémunération brute sont réintégrées (article 83 1° quater du CGI)
 
 ## 11.1.0
 

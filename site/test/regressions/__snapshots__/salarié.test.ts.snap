@@ -211,7 +211,7 @@ exports[`calculate simulations-salarié > cadre 1`] = `
 salarié . contrat . salaire brut . équivalent temps plein: null
 salarié . coût total employeur: 4053
 salarié . rémunération . contrôle minimum: null
-salarié . rémunération . net . payé après impôt: 2215
+salarié . rémunération . net . payé après impôt: 2218
 salarié . rémunération . net . à payer avant impôt: 2348"
 `;
 
@@ -273,7 +273,7 @@ exports[`calculate simulations-salarié > cdd 5`] = `
 salarié . contrat . salaire brut . équivalent temps plein: null
 salarié . coût total employeur: 3566
 salarié . rémunération . contrôle minimum: null
-salarié . rémunération . net . payé après impôt: 1815
+salarié . rémunération . net . payé après impôt: 1831
 salarié . rémunération . net . à payer avant impôt: 1871
 
 Notifications affichées : salarié . convention collective . avertissement convention collective, salarié . contrat . CDD . information"
@@ -583,7 +583,7 @@ exports[`calculate simulations-salarié > heures supplémentaires et complément
 salarié . contrat . salaire brut . équivalent temps plein: null
 salarié . coût total employeur: 2345
 salarié . rémunération . contrôle minimum: null
-salarié . rémunération . net . payé après impôt: 1607
+salarié . rémunération . net . payé après impôt: 1616
 salarié . rémunération . net . à payer avant impôt: 1616
 
 Notifications affichées : salarié . convention collective . avertissement convention collective"
@@ -594,7 +594,7 @@ exports[`calculate simulations-salarié > heures supplémentaires et complément
 salarié . contrat . salaire brut . équivalent temps plein: null
 salarié . coût total employeur: 2314
 salarié . rémunération . contrôle minimum: null
-salarié . rémunération . net . payé après impôt: 1581
+salarié . rémunération . net . payé après impôt: 1589
 salarié . rémunération . net . à payer avant impôt: 1589
 
 Notifications affichées : salarié . convention collective . avertissement convention collective"

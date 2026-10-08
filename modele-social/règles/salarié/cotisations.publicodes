@@ -968,18 +968,35 @@ salarié . cotisations . prévoyances:
         - conventionnelle . salarié
         # TODO: autre
 
-      avec:
-        non déductible:
-          titre: Prévoyance salarié non déductible
-          valeur: salarié
-          abattement:
-            somme:
-              - 5% * plafond sécurité sociale
-              - 2% * rémunération . brut
-            plafond: 2% * 8 * plafond sécurité sociale
+      références:
+        Bopfip § 120: https://bofip.impots.gouv.fr/bofip/5956-PGP.html
 
-        références:
-          Bopfip § 120: https://bofip.impots.gouv.fr/bofip/5956-PGP.html
+salarié . cotisations . prévoyances . non déductible fiscalement:
+  titre: Prévoyance non déductible du revenu imposable
+  description: |
+    Les cotisations salariales de prévoyance et de frais de santé, et la part patronale
+    finançant des garanties autres que les frais de santé (incapacité, invalidité, décès), sont
+    déductibles du revenu imposable dans la limite de 5 % du plafond annuel de la sécurité
+    sociale et de 2 % de la rémunération brute, sans dépasser 2 % de 8 fois ce plafond.
+    L'excédent est réintégré dans le net imposable. La part patronale des frais de santé est,
+    elle, imposable dès le premier euro.
+  unité: €/mois
+  valeur: déductible
+  abattement: plafond
+  avec:
+    déductible:
+      titre: Prévoyance déductible du revenu imposable
+      somme:
+        - salarié
+        - incapacité invalidité décès . employeur
+    plafond:
+      titre: Limite de déduction fiscale de la prévoyance
+      somme:
+        - 5% * plafond sécurité sociale
+        - 2% * (rémunération . brut + santé . employeur)
+      plafond: 2% * 8 * plafond sécurité sociale
+  références:
+    BOFIP BOI-RSA-BASE-30-10-20: https://bofip.impots.gouv.fr/bofip/5956-PGP.html/identifiant=BOI-RSA-BASE-30-10-20-20170621
 
 salarié . cotisations . prévoyances . santé:
   titre: complémentaire garanties frais de santé obligatoire
